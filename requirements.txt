@@ -8,5 +8,5 @@ pep-8
 pyflakes
 jslint
 csslint
-
+coverage
 django-jenkins
