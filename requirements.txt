@@ -4,3 +4,9 @@ gunicorn==19.7.1
 psycopg2==2.7.3.2
 wheel==0.30.0
 whitenoise==3.3.1
+pep-8
+pyflakes
+jslint
+csslint
+
+django-jenkins
