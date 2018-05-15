@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #Add our new application
-    'django-jenkins',
+    'django_jenkins',
     'catalog.apps.CatalogConfig', #This object was created for us in /catalog/apps.py
 ]
 
@@ -148,3 +148,11 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+JENKINS_TASKS = (
+    'django_jenkins.tasks.run_pep8',
+    'django_jenkins.tasks.run_pyflakes',
+    'django_jenkins.tasks.run_jslint',
+    'django_jenkins.tasks.run_csslint',
+    'django_jenkins.tasks.run_sloccount'
+)
